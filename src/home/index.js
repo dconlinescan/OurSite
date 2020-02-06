@@ -19,6 +19,8 @@ import egameBg from "../imgs/egame-bg.png";
 import chessBg from "../imgs/chess-bg.png";
 import ogBg from "../imgs/og-bg.png";
 import ogBg2 from "../imgs/og-bg2.png";
+import agBg2 from "../imgs/ag-bg2.png";
+import bgBg2 from "../imgs/bg-bg2.png";
 import phoneImg from "../imgs/phone.png";
 import telegramImg from "../imgs/telegram.png";
 import whatsappImg from "../imgs/whatsapp.png";
@@ -307,7 +309,11 @@ export default class Home extends React.Component {
                             <div className="content og-game-wrap">
                                 <div className="head-title"/>
                                 <p className="og-game-description">恒博娱乐提供多款真人视讯游戏平台，提供高清视频流及无限游戏玩法。超越业众步调，接入知名品牌产品，集成东方集团旗下的OG视讯等款游戏。凭借我们的純熟快速的技术团队，提供稳定性高、画面清晰的播界面，让玩家更即时精准，如同亲临现场娱乐场所。我们的优势经验，为各运营商提供最佳的解決方案，不论是单独介接游戏或是集成网站，都将超乎您所想像。
+                                    <p>
                                     <img className="og-game-bg2" src={ogBg2} alt=""/>
+                                    <img className="og-game-bg2" src={agBg2} alt=""/>
+                                    <img className="og-game-bg2" src={bgBg2} alt=""/>
+                                    </p>
                                 </p>
                                 <img className="og-game-bg" src={ogBg} alt=""/>
                             </div>
