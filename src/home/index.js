@@ -477,7 +477,7 @@ export default class Home extends React.Component {
                                     <li>
                                         <img src={whatsappImg} alt=""/>
                                         <h5>WhatsApp</h5>
-                                        <CopyToClipboard text="18283324666">
+                                        <CopyToClipboard text="639167933415">
                                             <p>
                                                 <div>商务：+63 9167933415</div>
                                                 <span className="copy-btn">点击复制</span>
@@ -487,7 +487,7 @@ export default class Home extends React.Component {
                                     <li>
                                         <img src={telegramImg} alt=""/>
                                         <h5>Telegram</h5>
-                                        <CopyToClipboard text="18283324666">
+                                        <CopyToClipboard text="639167933415">
                                             <p>
                                                 <div>商务：+63 9167933415</div>
                                                 <span className="copy-btn">点击复制</span>
@@ -497,7 +497,7 @@ export default class Home extends React.Component {
                                     <li>
                                         <img src={phoneImg} alt=""/>
                                         <h5>Telephone</h5>
-                                        <CopyToClipboard text="639771123456">
+                                        <CopyToClipboard text="639167933415">
                                             <p title="点击复制">
                                                 <div>商务：+63 9167933415</div>
                                                 <span className="copy-btn">点击复制</span>
