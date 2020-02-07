@@ -483,9 +483,9 @@ export default class Home extends React.Component {
                                     <li>
                                         <img src={whatsappImg} alt=""/>
                                         <h5>WhatsApp</h5>
-                                        <CopyToClipboard text="639167933415">
+                                        <CopyToClipboard text="639451970194">
                                             <p>
-                                                <div>商务：+63 9167933415</div>
+                                                <div>商务：+63 9451970194</div>
                                                 <span className="copy-btn">点击复制</span>
                                             </p>
                                         </CopyToClipboard>
@@ -493,9 +493,9 @@ export default class Home extends React.Component {
                                     <li>
                                         <img src={telegramImg} alt=""/>
                                         <h5>Telegram</h5>
-                                        <CopyToClipboard text="639167933415">
+                                        <CopyToClipboard text="639451970194">
                                             <p>
-                                                <div>商务：+63 9167933415</div>
+                                                <div>商务：+63 9451970194</div>
                                                 <span className="copy-btn">点击复制</span>
                                             </p>
                                         </CopyToClipboard>
@@ -503,9 +503,9 @@ export default class Home extends React.Component {
                                     <li>
                                         <img src={phoneImg} alt=""/>
                                         <h5>Telephone</h5>
-                                        <CopyToClipboard text="639167933415">
+                                        <CopyToClipboard text="639451970194">
                                             <p title="点击复制">
-                                                <div>商务：+63 9167933415</div>
+                                                <div>商务：+63 9451970194</div>
                                                 <span className="copy-btn">点击复制</span>
                                             </p>
                                         </CopyToClipboard>
