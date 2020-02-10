@@ -532,6 +532,7 @@ body, .body-wrap {
     //红包游戏
     &.packet-wrap {
       .head-title {
+        margin-top: 10px;
         width: 500px;
         background-image: url("../imgs/title11.png");
         @media screen and (max-width: 600px) {
