@@ -24,8 +24,8 @@ export default class Agency extends Component {
         return (
             <div>
                 <div>
-                    <div className="container bg9">
-                        <Logo/>
+                    <div className="container bg8">
+                        {/* <Logo/> */}
                         <div className="agency-detail-wrap">
                             <div className="agency-detail">
                                 <img className="big-img center" src={Img0} alt=""/>

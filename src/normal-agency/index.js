@@ -23,8 +23,8 @@ export default class NormalAgency extends Component {
         return (
             <div>
                 <div>
-                    <div className="container bg9">
-                        <Logo/>
+                    <div className="container bg8">
+                        {/* <Logo/> */}
                         <div className="normal-agency-detail-wrap">
                             <div className="normal-agency-detail">
                                 <img className="big-img center" src={Img0} alt=""/>

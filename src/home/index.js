@@ -21,10 +21,14 @@ import ogBg from "../imgs/og-bg.png";
 import ogBg2 from "../imgs/og-bg2.png";
 import agBg2 from "../imgs/ag-bg2.png";
 import bgBg2 from "../imgs/bg-bg2.png";
+import BgBg2 from "../imgs/BGBG2.png";
+import AgBg2 from "../imgs/AGBG2.png";
+import OgBg2 from "../imgs/OGBG2.png";
 import phoneImg from "../imgs/phone.png";
 import telegramImg from "../imgs/telegram.png";
 import whatsappImg from "../imgs/whatsapp.png";
 import chatImg from "../imgs/chat-bg.png";
+import packetImg from "../imgs/packet.png";
 import icon1 from '../imgs/s2-ico1.png';
 import icon2 from '../imgs/s2-ico2.png';
 import icon3 from '../imgs/s2-ico3.png';
@@ -95,6 +99,10 @@ export default class Home extends React.Component {
                 animateCss('.chat-wrap .head-title', 'bounceInLeft');
                 animateCss('.chat-img', 'pulse');
                 break;
+            case 5:
+                animateCss('.packet-wrap .head-title', 'bounceInLeft');
+                animateCss('.chat-img', 'pulse');
+                break;
             case 6:
                 animateCss('.lottery-wrap .head-title', 'bounceInLeft');
                 animateCss('.lottery-img', 'pulse');
@@ -131,7 +139,7 @@ export default class Home extends React.Component {
             case 0:
             default:
                 animateCss('.company-logo', 'fadeIn');
-                animateCss('.company-about', 'bounceInLeft');
+                // animateCss('.company-about', 'bounceInLeft');
                 animateCss('.company-game', 'bounceInRight');
                 animateCss('.down-page', 'bounce');
 
@@ -162,26 +170,24 @@ export default class Home extends React.Component {
                 }}>
                     {/*首页*/}
                     <div style={this.state.size}>
-                        <div className="container bg1">
-                            <Logo white={1}/>
+                        <div className="container bg1 bg11">
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content home-wrap">
-                                <Link to='/agency/0'>
-                                    <div className="head-title"></div>
-                                </Link>
+                                <div className="head-title"></div>
                                 <div className="company-logo"/>
-                                <div className="company-about">彩票包网提供商</div>
+                                {/* <div className="company-about">彩票包网提供商</div> */}
                                 <div className="company-game">
                                     <ul>
-                                        <li onClick={() => this.slideTo(6)}>恒博彩票</li>
+                                        <li onClick={() => this.slideTo(7)}>恒博彩票</li>
                                         <li onClick={() => this.slideTo(3)}>全民代理</li>
                                         <li onClick={() => this.slideTo(4)}>层层代理</li>
-
                                         <li onClick={() => this.slideTo(5)}>聊天室</li>
-                                        <li onClick={() => this.slideTo(6)}>电子游艺</li>
-                                        <li onClick={() => this.slideTo(8)}>真人娱乐</li>
-                                        <li onClick={() => this.slideTo(12)}>联系我们</li>
-                                        <li onClick={() => this.slideTo(9)}>棋牌游戏</li>
+                                        <li onClick={() => this.slideTo(6)}>红包游戏</li>
+                                        <li onClick={() => this.slideTo(8)}>电子游艺</li>
+                                        <li onClick={() => this.slideTo(9)}>真人娱乐</li>
+                                        <li onClick={() => this.slideTo(10)}>棋牌游戏</li>
+                                        <li onClick={() => this.slideTo(13)}>联系我们</li>
                                     </ul>
 
                                 </div>
@@ -190,8 +196,8 @@ export default class Home extends React.Component {
                     </div>
                     {/*集团介绍*/}
                     <div style={this.state.size}>
-                        <div className="container bg2 ">
-                            <Logo/>
+                        <div className="container bg8 ">
+                            {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content company-wrap">
                                 <div className="head-title"/>
@@ -204,8 +210,8 @@ export default class Home extends React.Component {
                     </div>
                     {/*创新彩种*/}
                     <div style={this.state.size}>
-                        <div className="container bg3">
-                            <Logo white={1}/>
+                        <div className="container bg2">
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content new-lottery-wrap">
                                 <div className="head-title"/>
@@ -216,8 +222,8 @@ export default class Home extends React.Component {
                     </div>
                     {/*全民代理*/}
                     <div style={this.state.size}>
-                        <div className="container bg4">
-                            <Logo white={1}/>
+                        <div className="container bg2">
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content agency-wrap">
                                 <Link to='/agency/3'>
@@ -242,7 +248,7 @@ export default class Home extends React.Component {
                     {/*层层代理*/}
                     <div style={this.state.size}>
                         <div className="container bg5">
-                            <Logo white={1}/>
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content agency-wrap normal-agency-wrap">
                                 <Link to='/normal-agency'>
@@ -263,8 +269,8 @@ export default class Home extends React.Component {
                     </div>
                     {/*聊天室*/}
                     <div style={this.state.size}>
-                        <div className="container bg3">
-                            <Logo white={1}/>
+                        <div className="container bg2">
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content chat-wrap">
                                 <div className="head-title"/>
@@ -275,10 +281,28 @@ export default class Home extends React.Component {
                             </div>
                         </div>
                     </div>
+                    {/* 红包游戏 */}
+                    <div style={this.state.size}>
+                        <div className="container bg2">
+                            {/* <Logo white={1}/> */}
+                            <DownPage goNext={this.goNext}/>
+                            <div className="content packet-wrap">
+                                <div className="head-title"/>
+
+                                <p className="description">会员常购的彩种休市了怎样让他继续在平台逗留？
+                                微信群导流过来的会员无法快速上手？
+                                特色功能聊天室红包游戏来解决，会员一经上 手便一目了然，流连忘返。
+                                经典玩法牛牛，在红包游戏里更有十余种奖级随时开关，再也不怕无牛了，还有扫雷、接龙等任君选择。
+                                自由设置赔率，灵活搭配奖级，开创多元房间，让每个级别的会员都能找到抢红包的乐趣！游戏时间短，参与热情高，流水速度更上一个台阶。
+                                    </p>
+                                <img className="chat-img" src={packetImg} alt="恒博新彩种"/>
+                            </div>
+                        </div>
+                    </div>
                     {/*DC彩票*/}
                     <div style={this.state.size}>
                         <div className="container bg5">
-                            <Logo white={1}/>
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content lottery-wrap">
                                 <div className="head-title"/>
@@ -291,8 +315,8 @@ export default class Home extends React.Component {
                     </div>
                     {/* 电子游戏 */}
                     <div style={this.state.size}>
-                        <div className="container bg2">
-                            <Logo/>
+                        <div className="container bg8">
+                            {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content egame-wrap">
                                 <div className="head-title "/>
@@ -304,25 +328,31 @@ export default class Home extends React.Component {
                     {/* 真人*/}
                     <div style={this.state.size}>
                         <div className="container bg4 ">
-                            <Logo white={1}/>
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content og-game-wrap">
                                 <div className="head-title"/>
                                 <p className="og-game-description">恒博娱乐提供多款真人视讯游戏平台，提供高清视频流及无限游戏玩法。超越业众步调，接入知名品牌产品，集成东方集团旗下的OG视讯等款游戏。凭借我们的純熟快速的技术团队，提供稳定性高、画面清晰的播界面，让玩家更即时精准，如同亲临现场娱乐场所。我们的优势经验，为各运营商提供最佳的解決方案，不论是单独介接游戏或是集成网站，都将超乎您所想像。
-                                    <p>
-                                    <img className="og-game-bg2" src={ogBg2} alt=""/>
-                                    <img className="og-game-bg2" src={agBg2} alt=""/>
-                                    <img className="og-game-bg2" src={bgBg2} alt=""/>
+                                    <p className="video">
+                                        <img className="og-game-bg2" src={ogBg2} alt=""/>
+                                        <img className="og-game-bg2" src={agBg2} alt=""/>
+                                        <img className="og-game-bg2" src={bgBg2} alt=""/>
+                                    </p>
+                                    <p className="video1">
+                                        <p className="videoimg"><img src={OgBg2} alt=""/></p>
+                                        <p className="videoimg"><img src={AgBg2} alt=""/></p>
+                                        <p className="videoimg"><img src={BgBg2} alt=""/></p>
+                                        
                                     </p>
                                 </p>
-                                <img className="og-game-bg" src={ogBg} alt=""/>
+                                {/* <img className="og-game-bg" src={ogBg} alt=""/> */}
                             </div>
                         </div>
                     </div>
                     {/*棋牌游戏*/}
                     <div style={this.state.size}>
                         <div className="container bg3 ">
-                            <Logo white={1}/>
+                            {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content chess-wrap">
                                 <div className="head-title"/>
@@ -334,7 +364,7 @@ export default class Home extends React.Component {
                     {/*系统稳定*/}
                     <div style={this.state.size}>
                         <div className="container bg7">
-                            <Logo/>
+                            {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content system-wrap">
                                 <p className='weChange'>市场稳定，功能强大</p>
@@ -423,7 +453,7 @@ export default class Home extends React.Component {
                     {/*APP介绍*/}
                     <div style={this.state.size}>
                         <div className='container bg8'>
-                            <Logo/>
+                            {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content app-wrap">
                                 <p className='weChange'>纯原生APP,超乎想象的稳定流畅</p>
@@ -476,7 +506,7 @@ export default class Home extends React.Component {
                     {/*联系方式*/}
                     <div style={this.state.size}>
                         <div className="container bg6">
-                            <Logo/>
+                            {/* <Logo/> */}
                             <div className="content contact-wrap">
                                 <div className="head-title"/>
                                 <ul>
@@ -523,9 +553,9 @@ export default class Home extends React.Component {
 
 
 //白色logo和蓝色logo
-const Logo = (props) => <a className="logo" href="/">
-    <h1><img src={props.white ? LogoWhite : LogoBlue} alt="恒博"/></h1>
-</a>
+// const Logo = (props) => <a className="logo" href="/">
+//     <h1><img src={props.white ? LogoWhite : LogoBlue} alt="恒博"/></h1>
+// </a>
 
 const DownPage = (props) => <div onClick={() => {
     props.goNext();
