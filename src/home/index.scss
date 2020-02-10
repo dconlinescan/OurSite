@@ -67,6 +67,26 @@ body, .body-wrap {
     background: url("../imgs/bg11.png") top center no-repeat;
     background-size: 100% 100%;
   }
+  .bg13 {
+    background: url("../imgs/bg13.png") top center no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg14 {
+    background: url("../imgs/bg14.png") top center no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg15 {
+    background: url("../imgs/bg15.png") top center no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg12 {
+    background: url("../imgs/bg12.png") top center no-repeat;
+    background-size: 100% 100%;
+  }
+  .bg18 {
+    background: url("../imgs/bg18.png") top center no-repeat;
+    background-size: 100% 100%;
+  }
 }
 
 .purple {
@@ -198,6 +218,26 @@ body, .body-wrap {
         background-size: 100%;
         background-position: center center;
         @media screen and (max-width: 1600px) {
+          margin: 20px auto 0;
+          background-size: 100%;
+          background-position: center center;
+        }
+        @media screen and (min-width: 1500px) and (max-width: 1600px){
+          margin: -70px auto 0;
+          background-size: 100%;
+          background-position: center center;
+        }
+        @media screen and (max-width: 1500px) {
+          margin: -70px auto 0;
+          background-size: 100%;
+          background-position: center center;
+        }
+        @media screen and (max-width: 1400px) {
+          margin: -70px auto 0;
+          background-size: 100%;
+          background-position: center center;
+        }
+        @media screen and (max-width: 1300px) {
           margin: 20px auto 0;
           background-size: 100%;
           background-position: center center;
@@ -492,10 +532,10 @@ body, .body-wrap {
     //红包游戏
     &.packet-wrap {
       .head-title {
-        width: 363px;
+        width: 500px;
         background-image: url("../imgs/title11.png");
         @media screen and (max-width: 600px) {
-          width: 50%;
+          width: 100%;
           margin: 0 auto;
           background-size: 100%;
           background-position: center center;

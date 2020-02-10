@@ -176,7 +176,7 @@ export default class Home extends React.Component {
                             <div className="content home-wrap">
                                 <div className="head-title"></div>
                                 <div className="company-logo"/>
-                                {/* <div className="company-about">彩票包网提供商</div> */}
+                                <div className="company-about">彩票包网提供商</div>
                                 <div className="company-game">
                                     <ul>
                                         <li onClick={() => this.slideTo(7)}>恒博彩票</li>
@@ -196,7 +196,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*集团介绍*/}
                     <div style={this.state.size}>
-                        <div className="container bg8 ">
+                        <div className="container bg8 bg18">
                             {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content company-wrap">
@@ -210,7 +210,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*创新彩种*/}
                     <div style={this.state.size}>
-                        <div className="container bg2">
+                        <div className="container bg2 bg12">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content new-lottery-wrap">
@@ -222,7 +222,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*全民代理*/}
                     <div style={this.state.size}>
-                        <div className="container bg2">
+                        <div className="container bg2 bg12">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content agency-wrap">
@@ -247,7 +247,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*层层代理*/}
                     <div style={this.state.size}>
-                        <div className="container bg5">
+                        <div className="container bg5 bg15">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content agency-wrap normal-agency-wrap">
@@ -269,7 +269,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*聊天室*/}
                     <div style={this.state.size}>
-                        <div className="container bg2">
+                        <div className="container bg2 bg12">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content chat-wrap">
@@ -283,7 +283,7 @@ export default class Home extends React.Component {
                     </div>
                     {/* 红包游戏 */}
                     <div style={this.state.size}>
-                        <div className="container bg2">
+                        <div className="container bg2 bg12">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content packet-wrap">
@@ -301,7 +301,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*DC彩票*/}
                     <div style={this.state.size}>
-                        <div className="container bg5">
+                        <div className="container bg5 bg15">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content lottery-wrap">
@@ -315,7 +315,7 @@ export default class Home extends React.Component {
                     </div>
                     {/* 电子游戏 */}
                     <div style={this.state.size}>
-                        <div className="container bg8">
+                        <div className="container bg8 bg18">
                             {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content egame-wrap">
@@ -327,7 +327,7 @@ export default class Home extends React.Component {
                     </div>
                     {/* 真人*/}
                     <div style={this.state.size}>
-                        <div className="container bg4 ">
+                        <div className="container bg4 bg14">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content og-game-wrap">
@@ -351,7 +351,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*棋牌游戏*/}
                     <div style={this.state.size}>
-                        <div className="container bg3 ">
+                        <div className="container bg3 bg13">
                             {/* <Logo white={1}/> */}
                             <DownPage goNext={this.goNext}/>
                             <div className="content chess-wrap">
@@ -363,7 +363,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*系统稳定*/}
                     <div style={this.state.size}>
-                        <div className="container bg7">
+                        <div className="container bg7 bg18">
                             {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content system-wrap">
@@ -452,7 +452,7 @@ export default class Home extends React.Component {
                     </div>
                     {/*APP介绍*/}
                     <div style={this.state.size}>
-                        <div className='container bg8'>
+                        <div className='container bg8 bg18'>
                             {/* <Logo/> */}
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content app-wrap">
