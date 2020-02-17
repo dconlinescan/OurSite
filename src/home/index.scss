@@ -690,21 +690,27 @@ body, .body-wrap {
           display: none;
           @media screen and (max-width: 600px) {
             display: block;
-            height: 200px;
             width: 100%;
             .videoimg{
               text-align: center;
               img{
-                width: 250px;
-                height: 50px;
-                margin-top: 20px;
+                width: 8rem;
+                height: 3.5rem;
+                margin-top: 1rem;
               }
             }
+            .ogvidoimg{
+              img{
+                width: 6rem;
+                height: 6rem;
+              }
+            }
+
           }
         }
       }
       .og-game-bg2 {
-        margin: 30px;
+        margin: 18px;
         @media screen and (max-width: 600px) {
           position: absolute;
           margin: 0;

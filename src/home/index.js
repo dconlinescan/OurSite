@@ -21,9 +21,6 @@ import ogBg from "../imgs/og-bg.png";
 import ogBg2 from "../imgs/og-bg2.png";
 import agBg2 from "../imgs/ag-bg2.png";
 import bgBg2 from "../imgs/bg-bg2.png";
-import BgBg2 from "../imgs/BGBG2.png";
-import AgBg2 from "../imgs/AGBG2.png";
-import OgBg2 from "../imgs/OGBG2.png";
 import phoneImg from "../imgs/phone.png";
 import telegramImg from "../imgs/telegram.png";
 import whatsappImg from "../imgs/whatsapp.png";
@@ -307,8 +304,9 @@ export default class Home extends React.Component {
                             <div className="content lottery-wrap">
                                 <div className="head-title"/>
 
-                                <p className="description">恒博DC
-                                    彩票创新自主彩种，搭配市场热门彩种，拥有几十种彩票种类。即时开奖数据、彩票资讯、统计及分析服务。不同于其他彩票平台，特别开发智慧操作、投注简易的界面。</p>
+                                <p className="description">恒博DC彩票，不仅有市场热门彩种、地方型冷门彩种，还有独一无二的自主创新彩种，满足各地各类彩民的购彩需求。
+                                跟官方同步更新的开奖结果，配合高性能大数据统计和分析、各方专业媒体的彩票资讯，让彩民购彩不再盲目，找到最佳下注方案。
+                                富有恒博特色的智慧操作、投注简易的界面，更是引领了业界潮流。</p>
                                 <img className="lottery-img" src={lotteryBg} alt="恒博新彩种"/>
                             </div>
                         </div>
@@ -320,7 +318,8 @@ export default class Home extends React.Component {
                             <DownPage type={2} goNext={this.goNext}/>
                             <div className="content egame-wrap">
                                 <div className="head-title "/>
-                                <p className="description">恒博游戏，市场最新，恒博娱乐与供应商间绝佳合作关系，特接入多超过数十款电子游戏产品，包含人人喜欢刺激的千炮捕鱼、大满贯MW电子、斗地主以及森林舞会等项目；恒博娱乐凭借整合技术优势，随时保持鮮活趣味，提供玩家最佳互动体验。</p>
+                                <p className="description">恒博游戏，最新最全。为了打造顶尖游戏环境，恒博长期与MW、MG、AG等供应商保持紧密合作关系 ，
+                                接入了海量电子游戏产品，如全民火热的千炮捕鱼、经典不朽的电子大满贯、轻快欢乐的森林舞会，给玩家目不暇接流连忘返的沉浸式体验。</p>
                                 <img className="egame-bg" src={egameBg} alt="棋牌"/>
                             </div>
                         </div>
@@ -332,16 +331,17 @@ export default class Home extends React.Component {
                             <DownPage goNext={this.goNext}/>
                             <div className="content og-game-wrap">
                                 <div className="head-title"/>
-                                <p className="og-game-description">恒博娱乐提供多款真人视讯游戏平台，提供高清视频流及无限游戏玩法。超越业众步调，接入知名品牌产品，集成东方集团旗下的OG视讯等款游戏。凭借我们的純熟快速的技术团队，提供稳定性高、画面清晰的播界面，让玩家更即时精准，如同亲临现场娱乐场所。我们的优势经验，为各运营商提供最佳的解決方案，不论是单独介接游戏或是集成网站，都将超乎您所想像。
+                                <p className="og-game-description">恒博娱乐提供多款真人视讯游戏平台和高清视频流及无限游戏玩法，集成了OG、AG、BG等真人视讯游戏。
+                                凭借业内一流的技术团队，为玩家持续提供高清画质、流畅稳定的直播界面，享受前所未有的视觉体验，和如临现场的真人互动。
                                     <p className="video">
-                                        <img className="og-game-bg2" src={ogBg2} alt=""/>
                                         <img className="og-game-bg2" src={agBg2} alt=""/>
+                                        <img className="og-game-bg2" src={ogBg2} alt=""/>
                                         <img className="og-game-bg2" src={bgBg2} alt=""/>
                                     </p>
                                     <p className="video1">
-                                        <p className="videoimg"><img src={OgBg2} alt=""/></p>
-                                        <p className="videoimg"><img src={AgBg2} alt=""/></p>
-                                        <p className="videoimg"><img src={BgBg2} alt=""/></p>
+                                        <p className="videoimg"><img src={agBg2} alt=""/></p>
+                                        <p className="videoimg ogvidoimg"><img src={ogBg2} alt=""/></p>
+                                        <p className="videoimg"><img src={bgBg2} alt=""/></p>
                                         
                                     </p>
                                 </p>
@@ -356,9 +356,9 @@ export default class Home extends React.Component {
                             <DownPage goNext={this.goNext}/>
                             <div className="content chess-wrap">
                                 <div className="head-title"/>
-                                <p className="description">恒博娱乐引进目前国际流行的棋牌游戏，包括开元棋牌。乐游 VG棋牌也将陆续开启，引领市场，给您不一样的绝佳体验。</p>
+                                <p className="description">恒博棋牌，在新老玩家和各供应商的支持下，已接入王者棋牌、开元棋牌、龙城棋牌、乐游棋牌、VG棋牌等多款知名棋牌游戏，精美的画面、优美的音乐，让玩家玩的舒心是我们的追求。恒博棋牌，一直伴您左右。  </p>
                                 <img className="chess-bg" src={chessBg} alt="棋牌"/>
-                            </div>
+                            </div>s
                         </div>
                     </div>
                     {/*系统稳定*/}
